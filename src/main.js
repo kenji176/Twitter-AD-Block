@@ -10,18 +10,10 @@ window.onload = function() {
                         for(let n=0; n<tweet[i].childElementCount; n++) {
                             if (tweet[i].children[n].textContent.slice( -7 ) == 'プロモーション'){
                                 tweet[i].remove();
-                            }else{
-                                ;
                             }
                         }
-                    }else{
-                        ;
                     }
-                }else{
-                    ;
                 }
-            }else{
-                ;
             }
         }
     });
