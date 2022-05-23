@@ -1,7 +1,7 @@
 window.onload = function() {
     window.addEventListener('scroll', function(){
         const tweet = document.getElementsByClassName('css-1dbjc4n');
-        for(i in tweet){
+        for(let i = 0, len = tweet.length; i<len; i++){
             if(tweet[i].hasAttribute("role")){
                 const role = tweet[i].getAttribute('role');
                 if(role == 'article'){
@@ -14,8 +14,14 @@ window.onload = function() {
                                 ;
                             }
                         }
+                    }else{
+                        ;
                     }
+                }else{
+                    ;
                 }
+            }else{
+                ;
             }
         }
     });
